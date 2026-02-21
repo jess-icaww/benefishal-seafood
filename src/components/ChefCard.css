@@ -1,0 +1,27 @@
+.chef-container {
+    display: flex;
+    width: 600px;
+    gap: 30px;
+}
+
+.chef-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.07),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.chef-container h5 {
+    color: #f26322;
+    text-transform: uppercase;
+}

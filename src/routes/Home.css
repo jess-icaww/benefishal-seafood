@@ -1,0 +1,328 @@
+/* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.home {
+  width: 100%;
+}
+
+.heading {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #1b1b1b;
+}
+
+.subheading-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  width: 40px;
+  height: 1px;
+  background-color: #E67E22;
+}
+
+.subheading {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #f26322;
+}
+
+
+/* Hero Section */
+.hero {
+  background-color: #b2b2b2;
+  color: #252525;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-image-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+  color: #383737;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.btn {
+  padding: 15px 25px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #f26322;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #f26322;
+  transform: translateY(-1px);
+}
+
+.btn-hero {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+}
+
+.btn-hero svg {
+  background-color: transparent;
+}
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* About Preview Section */
+  .about-preview {
+    padding: 80px 20px;
+    background-color: #f0eeea;
+    text-align: center;
+  }
+  
+
+  .about-preview h2 {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #1b1b1b;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-preview p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: light;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  .link-arrow {
+    color: #1d1d1d;
+    font-weight: 600;
+    text-decoration: underline #f26322 2px;
+    text-underline-offset: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .link-arrow:hover {
+    color: #1d1d1d;
+    transform: translateX(5px);
+    display: inline-block;
+  }
+  
+  /* Featured Products Section */
+  .featured-products {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #f0eeea;
+  }
+  
+  .featured-products h2 {
+    text-align: left;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #1b1b1b;
+    margin-bottom: 3rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  
+  .product-card {
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .product-card:hover .product-image {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-card h3 {
+    padding-top: 10px;
+    color: #1b1b1b;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+  }
+  
+  .product-card p {
+    color: #666;
+    margin: 0 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Chef Preview Section */
+  .chef-preview {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #FDFBF7;
+  }
+  
+  .chef-preview h2 {
+    font-size: 2.5rem;
+    color: #4354c0;
+    margin-bottom: 1rem;
+  }
+  
+  .chef-preview p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .chef-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chef-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  .chef-card-container > * {
+    height: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-image-circle {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content .tagline {
+      font-size: 1.4rem;
+    }
+  
+    .hero-content .subtitle {
+      font-size: 1rem;
+    }
+  
+    .about-preview h2,
+    .featured-products h2,
+    .sustainability h2,
+    .chef-preview h2 {
+      font-size: 2rem;
+    }
+  
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .chef-card-container {
+      grid-template-columns: 1fr; 
+      grid-template-rows: auto; 
+      gap: 1.5rem;
+    }
+
+  }
