@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tenor+Sans&display=swap');
+
 .chef-container {
     display: flex;
-    width: 600px;
+    width: 100%;
     gap: 30px;
 }
 
 .chef-container img {
-    width: 250px;
+    width: 200px;
     height: 250px;
     border-radius: 50px;
     object-fit: cover;
@@ -23,5 +27,13 @@
 
 .chef-container h5 {
     color: #f26322;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
     text-transform: uppercase;
+}
+
+.chef-container h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
