@@ -20,13 +20,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  background-color: #b2b2b2;
+  background-color: #01584f;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
   text-decoration: none;
-  color: #545454;
+  color: #FFFFFF;
   transition: color 0.3s ease;
 }
 
@@ -54,7 +54,7 @@ nav > div a {
 }
 
 nav > div a:hover {
-  color: #f26322;
+  color: #ea4e35;
 }
 
 nav > div a::after {
@@ -64,7 +64,7 @@ nav > div a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #f26322;
+  background-color: #ea4e35;
   transition: width 0.3s ease;
 }
 

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Courier+Prime:wght@400;700&display=swap');
+
+.server-pad-wrapper {
+  position: sticky;
+  top: 20px;
+}
+
+.server-pad {
+  background: linear-gradient(to bottom, #fdfcf8 0%, #f9f7f0 100%);
+  border-radius: 3px;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  padding: 25px 20px 20px;
+  position: relative;
+  border: 1px solid #d4c9b0;
+  transform: rotate(-1deg);
+  transition: transform 0.3s ease;
+}
+
+.server-pad:hover {
+  transform: rotate(0deg);
+}
+
+/* Perforation at top */
+.pad-perforation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 8px,
+    #d4c9b0 8px,
+    #d4c9b0 10px
+  );
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* Header */
+.pad-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.pad-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.4rem;
+  color: #1b1b1b;
+  margin-bottom: 5px;
+  letter-spacing: 0.05em;
+}
+
+.pad-order-number {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 700;
+}
+
+/* Dividers */
+.pad-divider {
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    #999,
+    #999 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  margin: 12px 0;
+}
+
+.pad-divider-bold {
+  height: 2px;
+  background: #333;
+  margin: 12px 0;
+}
+
+.pad-line {
+  height: 1px;
+  background: #ccc;
+  margin: 8px 0;
+}
+
+/* Meta Info */
+.pad-meta {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.pad-meta-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.meta-label {
+  color: #666;
+  font-weight: 700;
+}
+
+.meta-value {
+  color: #1b1b1b;
+}
+
+/* Items Header */
+.pad-items-header {
+  display: grid;
+  grid-template-columns: 45px 1fr 80px;
+  gap: 10px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* Items */
+.pad-items {
+  min-height: 120px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.pad-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pad-items::-webkit-scrollbar-track {
+  background: #f0eeea;
+  border-radius: 3px;
+}
+
+.pad-items::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.pad-empty {
+  font-family: 'Courier Prime', monospace;
+  font-style: italic;
+  color: #999;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+.pad-item {
+  display: grid;
+  grid-template-columns: 45px 1fr 80px 25px;
+  gap: 10px;
+  align-items: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1rem;
+  color: #1b1b1b;
+  padding: 8px 0;
+  position: relative;
+  animation: writeIn 0.3s ease;
+}
+
+@keyframes writeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.pad-item.strikethrough .item-name,
+.pad-item.strikethrough .item-price {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.item-qty {
+  text-align: center;
+  font-weight: 700;
+}
+
+.item-name {
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.item-price {
+  text-align: right;
+  font-weight: 700;
+}
+
+.remove-item-btn {
+  background: none;
+  border: none;
+  color: #ea4e35;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: all 0.2s ease;
+  font-weight: 700;
+}
+
+.remove-item-btn:hover {
+  color: #d45519;
+  transform: scale(1.2);
+}
+
+/* Totals */
+.pad-totals {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.pad-grand-total {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  color: #1b1b1b;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+/* Fire Order Button */
+.fire-order-btn {
+  width: 100%;
+  background: #ea4e35;
+  color: white;
+  border: 3px solid #1b1b1b;
+  padding: 15px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 
+    0 4px 0 #d45519,
+    0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease;
+  letter-spacing: 0.1em;
+}
+
+.fire-order-btn:hover {
+  background: #d45519;
+  transform: translateY(2px);
+  box-shadow: 
+    0 2px 0 #b84315,
+    0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fire-order-btn:active {
+  transform: translateY(4px);
+  box-shadow: 
+    0 0 0 #b84315,
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.pad-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+  border-top: 1px dashed #ccc;
+  padding-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .server-pad-wrapper {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .server-pad {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .server-pad {
+    padding: 20px 15px 15px;
+  }
+
+  .pad-title {
+    font-size: 1.2rem;
+  }
+
+  .pad-items-header {
+    grid-template-columns: 40px 1fr 70px;
+    font-size: 0.75rem;
+  }
+
+  .pad-item {
+    grid-template-columns: 40px 1fr 70px 25px;
+    font-size: 0.9rem;
+  }
+
+  .item-name {
+    font-size: 0.85rem;
+  }
+
+  .pad-grand-total {
+    font-size: 1.1rem;
+  }
+
+  .fire-order-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}

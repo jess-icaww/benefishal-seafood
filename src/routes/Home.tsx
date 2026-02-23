@@ -15,7 +15,7 @@ function Home() {
           </div>
           <h1>Sustainable. Traceable. Exceptional.</h1>
           <Link to="/order" className="btn btn-primary btn-hero">
-            Order Now <ArrowRight />
+            Order Now
           </Link>
         </div>
       </section>
@@ -87,9 +87,6 @@ function Home() {
             </div>
             <h2>Trusted by <em>Top Chefs</em></h2>
           </div>
-          <p className="chef-description">
-            Leading restaurants across the country trust Benefishal for their seafood needs.
-          </p>
           <div className="chef-card-container">
             <ChefCard
               image="./chef1.jpg"

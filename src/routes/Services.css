@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Lato:wght@300;400;600&display=swap');
+
+.services {
+  width: 100%;
+}
+
+/* Header */
+.services-header {
+  background-color: #f0eeea;
+  padding: 80px 20px 60px;
+  text-align: center;
+}
+
+.services-header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-subheading-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.services-line {
+  width: 40px;
+  height: 1px;
+  background-color: #ea4e35;
+}
+
+.services-subheading {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ea4e35;
+}
+
+.services-heading {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: #1b1b1b;
+  margin-bottom: 15px;
+}
+
+.services-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Filter Section */
+.services-filter {
+  background-color: white;
+  padding: 30px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.filter-pills {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  padding: 10px 24px;
+  background-color: transparent;
+  color: #1b1b1b;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.filter-pill:hover {
+  border-color: #ea4e35;
+  color: #ea4e35;
+}
+
+.filter-pill.active {
+  background-color: #ea4e35;
+  color: white;
+  border-color: #ea4e35;
+}
+
+/* Content Section */
+.services-content {
+  background-color: #f0eeea;
+  padding: 60px 20px 80px;
+}
+
+.services-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Fish Grid */
+.fish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Server Pad Container */
+.server-pad-container {
+  position: relative;
+}
+
+/* Confirmation Modal */
+.confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.confirmation-modal {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 450px;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.confirmation-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: fireAnimation 0.6s ease;
+}
+
+@keyframes fireAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.confirmation-modal h2 {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 2rem;
+  color: #1b1b1b;
+  margin-bottom: 15px;
+}
+
+.confirmation-modal p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.confirmation-subtext {
+  font-size: 0.95rem !important;
+  color: #999 !important;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .server-pad-container {
+    order: -1;
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+
+  .fish-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .services-description {
+    font-size: 1.1rem;
+  }
+
+  .filter-pills {
+    justify-content: flex-start;
+  }
+
+  .filter-pill {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+
+  .fish-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-content {
+    padding: 40px 20px 60px;
+  }
+
+  .confirmation-modal {
+    margin: 0 20px;
+    padding: 40px 30px;
+  }
+
+  .confirmation-modal h2 {
+    font-size: 1.7rem;
+  }
+
+  .confirmation-icon {
+    font-size: 3rem;
+  }
+}
