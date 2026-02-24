@@ -13,9 +13,8 @@ const Navbar = () => {
       <div>
         <Link to="/">HOME</Link>
         <Link to="/origin">OUR STORY</Link>
-        <Link to="/services">SERVICES</Link>
-        <Link to="/order">ORDER ONLINE</Link>
         <Link to="/chefs">CHEF SPOTLIGHT</Link>
+        <Link to="/services">ORDER ONLINE</Link>
       </div>
     </nav>
   );
