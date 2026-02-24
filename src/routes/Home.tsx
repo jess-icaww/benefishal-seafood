@@ -13,9 +13,12 @@ function Home() {
           <div className="hero-image-circle">
             <img src="/hero.png" alt="Premium Smoked Salmon" />
           </div>
+          <div className="hero-sub">
+          Wild-caught · Sustainably sourced · Premium quality
+          </div>
           <h1>Sustainable. Traceable. Exceptional.</h1>
           <Link to="/order" className="btn btn-primary btn-hero">
-            Order Now
+            Order Now <ArrowRight size={16}/>
           </Link>
         </div>
       </section>
