@@ -88,6 +88,26 @@ nav > div .nav-btn.active {
   color: white;
 }
 
+.nav-btn {
+  font-family: "Lato", sans-serif;
+  padding: 8px 24px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1.5px solid #ea4e35;
+  color: #ea4e35;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #ea4e35;
+  color: white;
+  transform: translateY(-2px);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   nav {
