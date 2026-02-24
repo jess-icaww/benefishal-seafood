@@ -1,20 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav>
-      <Link to="/">
+      <NavLink to="/">
         <span>
           <img src="./logo.png" />
         </span>
-      </Link>
+      </NavLink>
 
       <div>
-        <Link to="/">HOME</Link>
-        <Link to="/origin">OUR STORY</Link>
-        <Link to="/chefs">CHEF SPOTLIGHT</Link>
-        <Link to="/services">ORDER ONLINE</Link>
+        <NavLink className="nav-link" to="/" end>HOME</NavLink>
+        <NavLink className="nav-link" to="/origin">OUR STORY</NavLink>
+        <NavLink className="nav-link" to="/chefs">CHEF SPOTLIGHT</NavLink>
+        <NavLink to="/services" className="btn btn-primary nav-btn">ORDER ONLINE</NavLink>
       </div>
     </nav>
   );

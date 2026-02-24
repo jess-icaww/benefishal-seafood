@@ -53,7 +53,7 @@ nav > div a {
   position: relative;
 }
 
-nav > div a:hover {
+.nav-link:hover {
   color: #ea4e35;
 }
 
@@ -70,6 +70,22 @@ nav > div a::after {
 
 nav > div a:hover::after {
   width: 100%;
+}
+
+nav > div a.active {
+  color: #ea4e35;
+}
+
+nav > div a.active::after {
+  width: 100%;
+}
+
+nav > div .nav-btn::after {
+  display: none;
+}
+
+nav > div .nav-btn.active {
+  color: white;
 }
 
 /* Responsive Design */
