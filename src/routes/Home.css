@@ -357,7 +357,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 2.5rem;
+    gap: 5rem;
     justify-content: center;
     align-items: center;
     margin: 3rem 3rem;
